@@ -1,0 +1,517 @@
+html{
+    font-size: 16px;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/4d2c5849-b306-4884-9036-6211f7ee0178/web/IN-en-20240930-TRIFECTA-perspective_1e1ca6cd-9e2d-4e9d-9e4b-ba0c2d3a0e31_large.jpg);
+    position: relative;
+    background-size: 120%;
+    background-position: center;
+    background-color: rgb(136, 127, 127);
+    z-index: 0;
+
+    
+}
+.TINT{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 11, 11, 0.779)
+   
+}
+header * {
+    position: relative;
+    z-index: 2;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.7rem 2rem;
+   
+}
+.nav-buttons{
+    
+    display: flex;
+    align-items: center;
+    gap:0.7rem;
+}
+.lang{
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 3px 8px;
+    border-radius: 5px;
+    border: 0.1mm solid white;
+}
+.nav-signin{
+    padding: auto;
+    margin-left:0.1rem;
+    margin-right: 6vw;
+    font-size: 1rem;
+    color: white;
+    height: 2rem;
+    border-radius:5px;
+    background-color: #d9212a;
+    border: 0PX;
+    padding: 5px 10px;
+}
+
+.lang>select{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+}
+.header-content{
+padding: auto;
+}
+.content-tittle{
+    font-size: 2.4rem;
+    color: white;
+    text-align: center;
+
+   /*  border: 1px solid black; */
+    font-weight: bold;
+    max-width: 28rem;
+    margin:  5.2rem auto;
+    margin-bottom: 0rem;
+    min-width: 27rem;
+    padding: 2rem;
+    padding-bottom: 0rem;
+   
+}
+.content-text1{
+    color: white;
+    text-align: center;
+    margin: 0px auto;
+/*     border: 1px solid black; */
+   
+}
+
+.content-text2{
+    color: white;
+    width: 35rem;
+    min-width: 30rem;
+    margin:0px auto;
+   
+}
+.get-started{
+    width: 35rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap:0.5rem;
+    align-items: center;
+}
+input{
+    height: 3.3rem;
+    width: 20rem;
+    padding:  0px 1rem;
+    background-color: transparent;
+    border: 1px solid rgb(221, 214, 214);
+    border-radius: 5px;
+
+}
+input::placeholder {
+    color: rgb(235, 224, 224);
+    font-size: 1rem;
+    }
+.get-started>button{
+
+    width: 11rem;
+    height: 3.2rem;
+    color: white;
+    font-size: 1.3rem;background: rgb(229, 9, 20);
+    border:none;
+    border-radius: 7px;
+
+
+}
+.curve{
+    width: 100%;
+    height: 10vh;
+    margin-top:12rem;
+   border-radius:55%;
+   background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+  box-sizing: border-box;
+}
+
+.curve-section{
+    position: absolute;
+    width: 97vw;
+    margin: 0px;
+    height: 10vh;
+    top:5px;
+   border-radius:  52% 52% 0% 0%;
+   background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black
+}
+.space-covering{
+    color: rgb(0, 0, 0);
+    width: 98.5%;
+
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+
+}
+main{
+    background-color: black;
+    position: relative;
+  bottom:0.8rem;
+}
+.trending{
+    color: white;
+    margin: 0px;
+    font-size: 1.5rem;
+    margin-left: 4rem;
+}
+.trending-options{
+    display: flex;
+    gap:2rem;
+
+}
+
+.trending-options>select{
+    color: white;
+    margin: 0px;
+    background-color: rgba(128, 128, 128, 0.184);
+    font-size: 1rem;
+    padding: 0.5rem;
+
+    border-radius: 3px;
+}
+
+.movie-posters {
+    display: flex;
+    gap: 2.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-top: 1.2rem;
+    margin-left: 5rem;
+}
+  
+  .movie-posters::-webkit-scrollbar{
+    display:none;
+  }
+  .p1{
+    position: relative;
+    scroll-snap-align: start;
+  }
+  .p1>img {
+    position: relavtive;
+    height: 200px;
+    border-radius: 10px;
+    overflow-x: scroll;
+  }
+  
+  .p1>p {
+    position:absolute;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 5rem;
+    left:-10px;
+    top:10px;
+    text-shadow: -2px -2px 0px #ffffff,2px -2px 0px #ffffff,-2px 2px 0px #ffffff,2px 2px 0px #ffffff;
+
+  }
+  
+.reasons {
+    margin: 1rem 6.5%;
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+  }
+.reasons-tittle {
+    color: white;
+    font-size: 20px;
+
+    margin: 2% 6.5%; margin-top: 6%;
+    font-size: 1.5rem;
+  }  
+  .reason-card{
+    color: white;
+    width:25rem;
+    display: flex;
+    flex-direction: column;
+    height: 13rem;
+    padding: 1rem;
+    border-radius: 3%;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  }
+.reason-card>svg{
+ 
+margin-left: 83%;
+  }
+  .questions-tittle{
+    color: white;
+    font-weight: 400;
+    margin: 2% 6.5%; 
+    margin-top: ;
+    font-size: 1.5rem;
+  }
+  .question-card{
+    width: 80% ;
+    margin: 1rem 6.5%;
+    font-size: 1.5rem;
+    color: white;
+  background-color: #414141;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 1rem;
+  }
+  .suggestions{
+    
+    display: flex;
+    flex-direction: row;
+    gap:0.5rem;
+    align-items: center;
+    margin: 0% 13%;
+}
+.suggestions>input{
+    height: 3.3rem;
+    width: 60%;
+    padding:  0px 1rem;
+    background-color: transparent;
+    border: 1px solid rgb(221, 214, 214);
+    border-radius: 5px;
+
+}
+input::placeholder {
+    color: rgb(235, 224, 224);
+    font-size: 1rem;
+    }
+.suggestions>button{
+
+    width: 11rem;
+    height: 3.2rem;
+    color: white;
+    font-size: 1.3rem;background: rgb(229, 9, 20);
+    border:none;
+    border-radius: 7px;
+
+  }
+  .suggestions-desc{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  footer{
+    background-color: black;
+  }
+  .call-link{
+    margin-top: 3rem;
+    color:#989898;
+ 
+    font-size: 1.1rem;
+  }
+  .table-links{
+    width:60vw;
+    color:#989898;
+    flex-wrap: wrap;
+
+margin: auto;
+align-items: center;
+  }
+  
+  .table-links>a{
+    width:20vw;
+    padding: auto;
+    color:#989898;
+  }
+#logo{
+    height: 10%;
+    width:;
+    padding:0% 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 0px) and (max-width:900px)
+{html{
+  max-width: 100vw;
+  font-size: 16px;
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/4d2c5849-b306-4884-9036-6211f7ee0178/web/IN-en-20240930-TRIFECTA-perspective_1e1ca6cd-9e2d-4e9d-9e4b-ba0c2d3a0e31_large.jpg);
+  position: relative;
+  background-size: 120%;
+  background-position: center;
+  background-color: rgb(136, 127, 127);
+  z-index: 0;
+
+  
+}
+.TINT{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 11, 11, 0.779)
+ 
+}
+header * {
+  position: relative;
+  z-index: 2;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.7rem 2rem;
+  margin: 0px;
+ 
+}
+.nav-buttons{
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  gap:0.7rem;
+}
+.lang{
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 3px 8px;
+  border-radius: 5px;
+  border: 0.1mm solid white;
+}
+.nav-signin{
+  width: 80px;
+  padding: auto;
+  margin-left:0.1rem;
+  margin-right: 0px;
+  font-size: 1rem;
+  color: white;
+  height: 2rem;
+  border-radius:5px;
+  background-color: #d9212a;
+  border: 0PX;
+}
+
+.lang>select{
+  display: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+}
+.content-text2{
+  font-size: 1rem;
+  margin-top: 0px;
+  max-width: 25rem;
+  text-align: center;
+  min-width: auto;
+  font-weight: 100;
+}
+.get-started{
+  width: 150px;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  flex-direction: column;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.curve{width: 100%;
+}
+.curve-section{width: 100%;
+}
+.space-covering{width: 96.7%;
+overflow: hidden;}
+
+.trending{
+  margin-left: 1.5rem;
+}
+.trending>.trending-options{
+ max-width: 95%;
+  color: white;
+  flex-direction:column;
+  gap:10px;
+  font-size: 1rem;
+}
+.movie-posters{
+  
+  margin-left: 1.5rem;
+}
+.suggestions{
+flex-direction: column;
+}
+.suggestions>input{
+  width: 100%;
+}
+#logo{
+  height:1.5rem;
+  margin-left: 0px;
+  padding: 0px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+.content-tittle{
+  max-width: 40rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+ }
+.movie-posters{
+  
+  margin-left: 1.5rem;
+}
+.reasons{
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: 0px;
+  min-width: 100%;
+  justify-content: center;
+
+}
+.reason-card{
+  min-width: 5%;
+  max-width: 20%;
+}
+}
